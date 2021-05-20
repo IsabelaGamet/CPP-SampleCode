@@ -23,7 +23,7 @@
 int main(int numberOfArguments, char* arguments[])
 {
     // Variable Declarations
-    char dashedLine[] = "---------------------------------------------\n";
+    char dashedLine[] = "----------------------------------------------------------------------\n";
     double bubbleSortTime, selectionSortTime, mergeSortTime;
     SortingAnalyzer *pSortingAnalyzer;
 
