@@ -33,12 +33,12 @@ SortingAnalyzer::~SortingAnalyzer()
 /****************************************************************
  * Prints the elements of an array of integers.
  *
- * @param	arr					array of integers
- * @param	numberOfElements		number of elements in the array
+ * @param	arr			array of integers
+ * @param	numberOfElements	number of elements in the array
  */
 void SortingAnalyzer::showArray(int arr[], int numberOfElements)
 {
-    for (int index = 0; index < numberOfElements; index++)
+   	for (int index = 0; index < numberOfElements; index++)
 	{
 		// shows the element
 		if (index == numberOfElements - 1)
@@ -53,8 +53,8 @@ void SortingAnalyzer::showArray(int arr[], int numberOfElements)
 /****************************************************************
  * Sorts an array using Bubble Sort Algorithm.
  *
- * @param	arr						array of integers
- * @param	numberOfElements		number of elements in the array
+ * @param	arr			array of integers
+ * @param	numberOfElements	number of elements in the array
  */
 void SortingAnalyzer::bubbleSort(int arr[], int numberOfElements)
 {
@@ -91,7 +91,7 @@ void SortingAnalyzer::bubbleSort(int arr[], int numberOfElements)
 /****************************************************************
  * Sorts an array using Selection Sort Algorithm.
  *
- * @param	arr						array of integers
+ * @param	arr				array of integers
  * @param	numberOfElements		number of elements in the array
  */
 void SortingAnalyzer::selectionSort(int arr[], int numberOfElements)
@@ -121,7 +121,7 @@ void SortingAnalyzer::selectionSort(int arr[], int numberOfElements)
 /****************************************************************
  * Sorts an array using Merge Sort Algorithm.
  *
- * @param	arr						array of integers
+ * @param	arr				array of integers
  * @param	numberOfElementsOfArray		number of elements in the array
  */
 void SortingAnalyzer::mergeSort(int arr[], int numberOfElementsOfArray)
@@ -167,16 +167,16 @@ void SortingAnalyzer::mergeSort(int arr[], int numberOfElementsOfArray)
 /****************************************************************
  * Merges two subArrays into an array.
  *
- * @param	arr								array of integers
- * @param   numberOfElementsOfArray			number of elements of the original array
- * @param	subArray1						first subarray of integers
- * @param   numberOfElementsOfSubArray1		number of elements of the first subarray
- * @param	subArray2						second subarray of integers
- * @param   numberOfElementsOfSubArray2		number of elements of the second subarray
+ * @param	arr				array of integers
+ * @param	numberOfElementsOfArray		number of elements of the original array
+ * @param	subArray1			first subarray of integers
+ * @param	numberOfElementsOfSubArray1	number of elements of the first subarray
+ * @param	subArray2			second subarray of integers
+ * @param	numberOfElementsOfSubArray2	number of elements of the second subarray
  */
 void SortingAnalyzer::mergeArrays(int arr[], int numberOfElementsOfArray,
-                 int subArray1[], int numberOfElementsOfSubArray1,
-                 int subArray2[], int numberOfElementsOfSubArray2)
+                 		int subArray1[], int numberOfElementsOfSubArray1,
+                 		int subArray2[], int numberOfElementsOfSubArray2)
 {
     // Variable declarations
     int arrayIndex, subArray1Index, subArray2Index;
@@ -185,10 +185,10 @@ void SortingAnalyzer::mergeArrays(int arr[], int numberOfElementsOfArray,
     if((numberOfElementsOfSubArray1 + numberOfElementsOfSubArray2) > numberOfElementsOfArray)
     {
         printf("Warning: there was an error using the function mergeArrays. \n");
-		printf("The number of elements of the subarrays is greater than the number of elements of the array. \n");
+	printf("The number of elements of the subarrays is greater than the number of elements of the array. \n");
 
-		// ends the program
-		exit(0);
+	// ends the program
+	exit(0);
     }
     // set the indexes for the arrays
     arrayIndex = 0;
@@ -236,7 +236,7 @@ void SortingAnalyzer::mergeArrays(int arr[], int numberOfElementsOfArray,
 /****************************************************************
  * Swaps two elements of an array.
  *
- * @param	arr		    array of integers
+ * @param	arr		array of integers
  * @param	index1		index of the first element in the array
  * @param	index2		index of the second element in the array
  */
